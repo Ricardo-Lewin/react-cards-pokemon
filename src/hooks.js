@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState } from "react";
 
 function useFlip(initialFlipState = true) {
     const [isFlipped, setFlipped] = useState(initialFlipState);
@@ -9,3 +9,5 @@ function useFlip(initialFlipState = true) {
   
     return [isFlipped, flip];
   }
+
+export { useFlip };
